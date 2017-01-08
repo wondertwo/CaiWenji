@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_temp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_download"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="@string/begin_download"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/progress_text_left"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="bottom" />
+
+            <TextView
+                android:id="@+id/progress_text_right"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:gravity="bottom" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/progress_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
